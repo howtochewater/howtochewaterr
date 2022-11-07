@@ -1,0 +1,178 @@
+
+body {
+    font-family: "Tahoma", fantasy;
+    color: white;
+    display: grid;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.top-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr;
+    grid-gap: 10px;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 5px;
+}
+
+.people-title {
+    text-align: left;
+    margin-bottom:3rem;
+}
+
+.main-text {
+    display: grid;
+    margin-top: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.main-text .forum-text {
+    text-align: center;
+}
+
+.people-content {
+    float: left;
+    width: 20%;
+    margin-left: 2rem;
+}
+
+.p6{
+    border-bottom: 3px solid rgb(200, 44, 231);
+    padding-bottom: 2px;
+}
+
+
+.content-item {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.content-item img {
+    width: 50%;
+    height: auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    perspective: 10000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+  }
+  
+  .flip-card-back {
+    background-color:transparent;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.logo {
+    min-width: 5%;
+    min-height: 5%;
+    align-self: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.social-media {
+    text-align: right; 
+     
+}
+
+.logoo {
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+.Security_logo{
+    width: 10%;
+    height: 200%;
+}
+
+.Security_logo1{
+    width: auto;
+    height: auto;
+}
+
+@media (min-width:350px) {
+    html{font-size: 40%;}
+}
+
+@media (min-width: 400px) {
+    html { font-size: 55%; }
+}
+
+@media (min-width: 450px) {
+    html { font-size: 60%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 70%; }
+}
+
+@media (min-width: 550px) {
+    html { font-size: 80%; }
+}
+
+@media (min-width: 600px) {
+    html { font-size: 100%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 120%; }
+}
+
+@media (min-width: 1000px) {
+    html { font-size: 160%; }
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 200%; }
+}
